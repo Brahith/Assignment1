@@ -18,6 +18,9 @@ body{
     background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .navigation{
    padding: 10px 10% 
@@ -31,7 +34,7 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    width: 240px;
 }
 
 nav h4{
@@ -63,8 +66,10 @@ nav h4 a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin: 0;
+    margin-top: 10%;
     font-size: 30px;
+    text-align: center;
 }
 
 .header-text h1{
