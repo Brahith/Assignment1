@@ -1,11 +1,5 @@
 @charset "UTF-8"; /* CSS Document */
 /* The body tag style applies to all elements on the page */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
 body{
     background: rgb(54, 10, 10);
     color: white;
@@ -13,15 +7,15 @@ body{
 }
 /* The wrapper ID style is used with a div tag to provide a 960px wide page */
 #header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/background.png);
+    width: 10%;
+    height: 5vh;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
+
 .navigation{
    padding: 10px 10% 
 }
@@ -40,7 +34,7 @@ nav{
 nav h4{
     display: inline-block;
     list-style: none;
-    margin: 30px 20px;
+    margin: 10px 20px;
 }
     
 nav h4 a{
