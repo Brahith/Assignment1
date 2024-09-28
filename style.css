@@ -1,4 +1,7 @@
 @charset "UTF-8"; /* CSS Document */
+
+/*-----------HOME PAGE-------------*/
+
 /* The body tag style applies to all elements on the page */
 body{
     background: rgb(54, 10, 10);
@@ -6,7 +9,7 @@ body{
     
 }
 /* The wrapper ID style is used with a div tag to provide a 960px wide page */
-#header{
+#header Main{
     width: 10%;
     height: 5vh;
     background-size: cover;
@@ -29,6 +32,76 @@ nav{
 
 .logo{
     width: 240px;
+}
+
+nav h1{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+    
+nav h1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+    
+nav h1 a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: whitesmoke;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav h1 a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin: 0;
+    margin-top: 10%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.header-text h2{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h2 span{
+    color: rgb(63, 14, 14);
+}
+
+/*-------------ABOUT ME PAGE----------------*/
+#headerAbout{
+    width: 10%;
+    height: 5vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.navigationAbout{
+    padding: 15px 10% 
+ }
+
+ #navabout{
+    background-color: black;
+    border-radius: 10px;
+ }
+
+nav h3{
+    font-size: 25px;
+    width: 30px;
+    margin: 20px 20px;
 }
 
 nav h4{
@@ -59,18 +132,72 @@ nav h4 a:hover::after{
     width: 100%;
 }
 
-.header-text{
-    margin: 0;
-    margin-top: 10%;
+ .videosection{
+    width: 200px;
+    height: 200px;
+    padding: 10px 170px;
+    width: 100px;
+ }
+
+ .title{
+    width: 140px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
     font-size: 30px;
+ }
+
+/* The right-column ID style is floated right */
+#right-column
+{
+    float: right;
+    width: 850px;
+    height: -200px;
+    background-color:LightGray;
+}
+
+.headerName{
+    color: black;
+    /* Flexbox: Center text horizontally and vertically */
+    display: contents;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
     text-align: center;
 }
 
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+
+
+ nav h6{
+    display: inline-block;
+    list-style: none;
+    margin: 50px 170px;
+}
+    
+nav h6 a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+    
+nav h6 a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: whitesmoke;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
 }
 
-.header-text h1 span{
-    color: rgb(63, 14, 14);
+nav h6 a:hover::after{
+    width: 100%;
 }
+
+
+
+
+/*-----------PROJECTS PAGE-------------*/
+
+/*-----------CONTACT ME PAGE-------------*/
