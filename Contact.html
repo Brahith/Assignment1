@@ -3,65 +3,65 @@
     <head>
         <meta charset='utf-g'>
         <title>
-            Forms
+            Contact Me Page
         </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+
     <body>
-        <div id="wrapper">
-            <h1>
-                My Feedback Form
-            </h1>
-            <form action="mailto:brahith.pavanantharajah@ontariotechu.net" 
-            method="post" enctype="text/plain" ?subject=Mistake name="form">
-            <p>
-                <label for="name">
-                    Name:
-                </label>
-                <input type="text" name="name" size="32"
-                >
-            </p>
-
-            <p>
-                <label for="email">
-                    Email:
-                </label>
-                <input type="email" name="email" size="48">
-            </p>
-
-            <p>
-                <label for="comments">
-                    Comments: 
-                </label>
-                <br><br>
-                <textarea name="comments" cols="40" rows="8">
-                </textarea>
-            </p>
-
-            <p>
-                <input type="checkbox" name="maillist" checked>
-                <label for="maillist">Please add me to your mailing list </label>
-            </p>
-
-            <p>
-                <lable for="where"> How did you find us? </lable>
-                <select name="where" >
-                    <option value="Search engine"> Search Engine </option>
-                    <option value="Social Network"> Social Network </option>
-                    <option value="Reference"> Words of People </option>
-                    <option value="Other"> Other </option>
-                </select>
-            </p>
-            </form>
-
-            <p>
-                <input type="submit" value="Click to submit the form"/>
-            </p>
-
-            <p>
-                <input type="reset" value="Click to reset the form"/>
-            </p>
-
+        <div class="navigation">
+            <nav>
+                <img src="images/BrahithLogo.png" class="logo">
+                <h1>
+                    <a href="Main Code.html">Home</a>
+                    <a href="About.html">About Me</a>
+                    <a href="Work.html">Projects</a>
+                    <a href="Contact.html">Contact Info</a>
+                </h1>
+            </nav>
         </div>
+
+        <!--Left Section for Contact Info-->
+        <div id="contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> Email: brahith.pavanantharajah@ontariotechu.net</p>
+                    <p><i class="fa-solid fa-square-phone"></i> Number: +1 (647) - 857 - 3185</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!--Right Section for Form-->
+                <div class="contact-right">
+                    <form action="mailto:brahith.pavanantharajah@ontariotechu.net" 
+                    method="post" enctype="text/plain" ?subject=Mistake name="form">
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" size="32">
+                        </p>
+
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" size="48">
+                        </p>
+
+                        <p>
+                            <label for="comments">Comments: </label>
+                            <br><br>
+                            <textarea name="comments" cols="40" rows="8"></textarea>
+                        </p>
+
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <button type="reset" class="btn btn2">Click to reset the form</button>
+                    </form>
+                </div>
+            </div>
+        </div>        
     </body>
 </html>

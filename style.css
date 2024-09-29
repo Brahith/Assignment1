@@ -4,7 +4,7 @@
 
 /* The body tag style applies to all elements on the page */
 body{
-    background: rgb(54, 10, 10);
+    background-color: rgb(41, 39, 39);
     color: white;
     
 }
@@ -166,11 +166,11 @@ nav h4 a:hover::after{
 }
 
 
-
  nav h6{
     display: inline-block;
-    list-style: none;
-    margin: 50px 170px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30vh 150vh;
 }
     
 nav h6 a{
@@ -200,4 +200,66 @@ nav h6 a:hover::after{
 
 /*-----------PROJECTS PAGE-------------*/
 
+
+
 /*-----------CONTACT ME PAGE-------------*/
+#contact{
+    padding: 90px 40px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left{
+    margin: 0px 130px;
+    margin-top: -500px;
+    flex-basis: 40%;
+}
+
+.contact-left p i{
+    color: red;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+}
+
+.social-icons a:hover{
+    color: red;
+    transform: translateY(-5px);
+}
+
+.contact-right{
+    flex-basis: 40%;
+}
+
+.btn.btn2{
+    display: inline-block;
+    background-color: red;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: grey;
+    padding: 15px;
+    margin: 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
