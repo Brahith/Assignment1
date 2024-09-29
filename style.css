@@ -1,22 +1,22 @@
 @charset "UTF-8"; /* CSS Document */
 
 /*-----------HOME PAGE-------------*/
-
-/* The body tag style applies to all elements on the page */
-body{
-    background-color: rgb(41, 39, 39);
-    color: white;
-    
-}
-/* The wrapper ID style is used with a div tag to provide a 960px wide page */
-#header Main{
-    width: 10%;
-    height: 5vh;
+#headerMain{
+    width: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+/* The body tag style applies to all elements on the page */
+body{
+    background-image: linear-gradient(45deg, rgba(145, 124, 124, 0.493), black);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 .navigation{
@@ -32,6 +32,7 @@ nav{
 
 .logo{
     width: 240px;
+    border-radius: 30px;
 }
 
 nav h1{
@@ -79,6 +80,13 @@ nav h1 a:hover::after{
 }
 
 /*-------------ABOUT ME PAGE----------------*/
+#colorChange{
+    background-image: linear-gradient(rgba(145, 124, 124, 0.493), black);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
 #headerAbout{
     width: 10%;
     height: 5vh;
@@ -214,14 +222,15 @@ nav h6 a:hover::after{
     flex-wrap: wrap;
 }
 
+/*Left Side of the Contact Page*/
 .contact-left{
     margin: 0px 130px;
-    margin-top: -500px;
+    margin-top: -400px;
     flex-basis: 40%;
 }
 
 .contact-left p i{
-    color: red;
+    color: black;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -235,31 +244,43 @@ nav h6 a:hover::after{
 }
 
 .social-icons a:hover{
-    color: red;
+    color: black;
     transform: translateY(-5px);
 }
 
+/*Right Side of the Contact Page*/
 .contact-right{
+    margin-top: -40px;
     flex-basis: 40%;
 }
 
 .btn.btn2{
     display: inline-block;
-    background-color: red;
+    background-color: black;
+    color: white;
+}
+
+.btn.btn2:hover{
+    color: white;
+    transform: translateY(-5px);
 }
 
 .contact-right form{
     width: 100%;
 }
 
+form input, form label{
+    font-size: 17px;
+}
+
 form input, form textarea{
-    width: 100%;
+    width: 90%;
     border: 0;
     outline: none;
     background: grey;
     padding: 15px;
     margin: 15px;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 6px;
 }
