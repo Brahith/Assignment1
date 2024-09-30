@@ -15,7 +15,6 @@
 body{
     background-image: linear-gradient(45deg, rgba(145, 124, 124, 0.493), black);
     background-size: cover;
-    background-repeat: no-repeat;
     color: white;
 }
 
@@ -102,7 +101,8 @@ nav h1 a:hover::after{
  }
 
  #navabout{
-    background-color: black;
+    /*background-color: black;*/
+    background-image: linear-gradient(45deg, black, rgba(145, 124, 124, 0.493));
     border-radius: 10px;
  }
 
@@ -143,8 +143,8 @@ nav h4 a:hover::after{
  .videosection{
     width: 200px;
     height: 200px;
-    padding: 10px 170px;
-    width: 100px;
+    margin-left: 230px;
+    margin-top: 150px;
  }
 
  .title{
@@ -156,11 +156,21 @@ nav h4 a:hover::after{
  }
 
 /* The right-column ID style is floated right */
-#right-column
+.about{
+    width: 30%;
+    height: auto;
+    padding: 30px 80px;
+    border-radius: 30px;
+}
+
+/* The left-column ID style is floated right */
+#left-column
 {
     float: right;
     width: 850px;
     height: -200px;
+    margin-top: -320px;
+    margin-right: 50px;
     background-color:LightGray;
 }
 
@@ -201,6 +211,19 @@ nav h6 a::after{
 
 nav h6 a:hover::after{
     width: 100%;
+}
+
+footer{
+    background-color: white;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 30px;
+    width: 80%;
+    height: 8%;
+    margin-top: 300px;
+    margin-left: 10%;
 }
 
 
