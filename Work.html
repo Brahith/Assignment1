@@ -1,20 +1,57 @@
-<!DOCTYPE html>
+<!--The HTML5 doctype declaration is very simple-->
+<!DOCTYPE HTML>
+<!--All page content is inside the HTML element-->
 <html>
+<!--Head element content is not visible in a browser window-->
+
 <head>
-    <meta charset='utf-8'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!--The UTF-8 character set provides the most support for all symbols and
+characters-->
+    <meta charset="UTF-8">
+    <title>HTML Template</title>
+    <!-- The following line links to our style sheet file-->
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    
+<!--Content visible in the browser's window is inside the HTML element-->
 
-     <!--Footer content-->
-     <footer class="footerWork">
+<body>
+    <!--All our content is enclosed in the wrapper ID style-->
+    <div id="header About">
+        <div class="navigationAbout">
+            <nav id="navabout">
+                <h3>Projects</h3>
+                <h4>
+                    <a href="Main Code.html">Home</a>
+                    <a href="About.html">About Me</a>
+                    <a href="Work.html">Projects</a>
+                    <a href="Contact.html">Contact Info</a>
+                </h4>
+            </nav>
+        </div>
+        
+        <!--right-column ID style is floated right and used for content-->
+        <div id="right-column">
+            <h2>My Recent Projects</h2>
+            <p>The work I've done </p>
+            <div class="box">
+                <p>Box content</p>
+            </div>
+            <div class="box">
+                <p>Box content</p>
+            </div>
+            <div class="box">
+                <p>Box content</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer content-->
+    <footer class="footerWork">
         <div class="footerProject">
             <p><i class="fa-regular fa-copyright"></i>2024 Brahith Pavanantharajah |</p>
         </div>
     </footer>
+
 </body>
 </html>
