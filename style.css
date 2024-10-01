@@ -80,10 +80,10 @@ nav h1 a:hover::after{
 
 footer{
     background-color: white;
-    width: 35%;
+    width: 50%;
     height: auto;
     padding: 0px;
-    margin-left: 525px;
+    margin-left: 400px;
     margin-top: -65px;
     border-radius: 20px;
     display: flex;
@@ -95,12 +95,20 @@ footer{
     color: black;
     font-size: 18px;
     text-align: center;
+    margin-bottom: 5px;
 }
 
-.footerHome p i{
+.footerHome i{
     font-size: 20px; 
     color: black;
-    margin-right: 10px;
+    padding-top: 25px;
+}
+
+.bitmoji{
+    width: 8%;
+    height: auto;
+    float: left;
+    margin-left: 10px;
 }
 
 /*-------------ABOUT ME PAGE----------------*/
@@ -123,12 +131,12 @@ footer{
 
 .navigationAbout{
     padding: 15px 10% 
- }
+}
 
- #navabout{
+#navabout{
     background-image: linear-gradient(45deg, black, rgba(145, 124, 124, 0.493));
     border-radius: 10px;
- }
+}
 
 nav h3{
     font-size: 25px;
@@ -210,17 +218,17 @@ nav h4 a:hover::after{
 
 .footerAbout{
     color: black;
-    margin: 0px 130px;
-    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 25px; 
     margin-left: 450px;
     flex-basis: 40%;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.footerAbout p i{
-    font-size: 30px; 
+.footerAbout i{
+    font-size: 20px; 
     color: black;
-    margin-right: 15px;
+    margin-top: 20px;
     font-size: 25px;
 }
 
@@ -228,19 +236,19 @@ nav h4 a:hover::after{
 
 
 
-#right-column {  
+#right-work {  
     width: 70%;
     height: 600px;
     margin: 20px 225px; 
     background-color:rgba(57, 48, 42, 0.308); 
 }
 
-#right-column h2{
+#right-work h2{
     padding-top: 20px;
     text-align: center;
 }
 
-#right-column p{
+#right-work p{
     text-align: center;
     margin-left: 30px 200px;
 }
@@ -265,18 +273,16 @@ nav h4 a:hover::after{
 
 .footerWork{
     color: black;
+    text-align: center;
     margin: 0px 130px;
-    margin-top: 0px;
-    margin-left: 450px;
-    flex-basis: 40%;
-    font-size: 20px;
+    margin-left: 425px;
+    font-size: 18px;
 }
 
-.footerWork p i{
-    font-size: 30px; 
+.footerWork i{ 
     color: black;
-    margin-right: 15px;
-    font-size: 25px;
+    font-size: 20px;
+    padding: 25px;
 }
 
 /*-----------CONTACT ME PAGE-------------*/
@@ -356,30 +362,18 @@ form input, form textarea{
     border-radius: 6px;
 }
 
-#footerContact{
-    background-color: white;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 20px;
-    width: 80%;
-    height: 8%;
-    margin-top: 300px;
-    margin-left: 10%;
-}
-
 .footerContact{
     color: black;
+    text-align: center;
     margin: 0px 130px;
     margin-top: 0px;
     margin-left: 450px;
     flex-basis: 40%;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.footerContact p i{
-    font-size: 30px; 
+.footerContact i{
+    font-size: 20px; 
     color: black;
     margin-right: 15px;
     font-size: 25px;
