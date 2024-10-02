@@ -34,6 +34,13 @@ nav{
     border-radius: 30px;
 }
 
+.face{
+    width: 350px;
+    height: auto;
+    margin-left: 550px;
+    margin-top: -100px;
+}
+
 nav h1{
     display: inline-block;
     list-style: none;

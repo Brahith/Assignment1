@@ -1,5 +1,5 @@
 /* Media query for tablets, typically between 600px and 1024px */
-@media screen and (max-width: 1024px) and (min-width: 600px) {
+@media screen and (max-width: 1200px){
 
     /* General body styling for smaller devices */
     body {
