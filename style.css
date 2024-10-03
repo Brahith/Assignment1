@@ -39,6 +39,18 @@ nav{
     height: auto;
     margin-left: 550px;
     margin-top: -100px;
+    border-radius: 20px;
+    animation: shape-converter 5s infinite;
+}
+
+@keyframes shape-converter {
+    0% {background-color: rgba(145, 124, 124, 0.493);}
+    50% {
+        background-color: rgba(209, 40, 40, 0.585); 
+        transform: translate(150px) rotate(360deg); 
+    }
+    /*The transform code above allows the shape to animate in the direction you want it to move*/
+    100% {background-color: rgba(57, 48, 42, 0.308));}
 }
 
 nav h1{
@@ -200,7 +212,7 @@ nav h4 a:hover::after{
     width: 30%;
     height: auto;
     padding: 30px 100px;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 /* The right-column ID style is floated right */
@@ -312,6 +324,7 @@ nav h4 a:hover::after{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 /*Left Side of the Contact Page*/
@@ -376,11 +389,7 @@ nav h4 a:hover::after{
 .contact-right form input[type="submit"]:hover{
     color: white;
     transform: translateY(-5px);
-} 
-
-
-
-
+}
 
 form input, form label{
     font-size: 17px;
@@ -413,4 +422,87 @@ form input, form textarea{
     margin-right: 5px;
     margin-top: 15px;
     font-size: 25px;
+}
+
+
+@media (max-width: 800px) and (min-width: 10px){
+    
+    /* Home Page Ajustments */
+    @media (min-width: 801px) and (max-width: 1500px){
+        .navigation{
+            flex-direction: column; /* Stack items vertically */
+            margin-top: -100px;
+        }
+
+        .logo{
+            width: 100px;
+            height: auto;
+        }
+
+    }
+
+    @media (min-width: 801px) and (max-width: 1500px) {
+        .navigation{
+            display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;        
+        flex-direction: row; /* Stack items horizontally */
+        margin-top: -100px;
+        }
+
+        .logo{
+            width: 150px;
+            height: auto;
+        }
+    }
+
+
+    /* About Me Page Ajustments */
+
+
+
+    /* Work Page Ajustments */
+
+
+
+    /* Contact Me Page Adjustments */
+    .row {
+        flex-direction: column; /* Stack items vertically */
+        margin-top: -100px;
+    }
+    
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Make both sections take full width */
+        margin: 20px auto; /* Center sections with margin */
+    }
+
+    #navabout{
+        margin-bottom: 30px; /* Ensure space between navigation and content on smaller screens */
+    }
+
+    footer{
+        font-size: 10px;
+        background-color: white;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1500px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;        
+        flex-direction: row; /* Stack items horizontally */
+        margin-top: -100px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Make both sections take full width */
+        margin: 20px auto; /* Center sections with margin */
+    }
 }
