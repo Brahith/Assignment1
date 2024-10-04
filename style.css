@@ -40,7 +40,7 @@ nav{
     margin-left: 550px;
     margin-top: -100px;
     border-radius: 20px;
-    animation: shape-converter 5s infinite;
+    animation: shape-converter 5s 1;
 }
 
 @keyframes shape-converter {
@@ -50,7 +50,7 @@ nav{
         transform: translate(150px) rotate(360deg); 
     }
     /*The transform code above allows the shape to animate in the direction you want it to move*/
-    100% {background-color: rgba(57, 48, 42, 0.308));}
+    100% {background-color: rgba(57, 48, 42, 0.308);}
 }
 
 nav h1{
@@ -282,16 +282,29 @@ nav h4 a:hover::after{
     margin-left: 30px 200px;
 }
 
+.projectPoster{
+    width: 80%;
+    height: auto;
+    float: left;
+    margin: 20px 20px;
+    margin-left: 40px;
+}
+
 .box 
 { 
-    height: 150px; 
-    width: 150px;
+    width: 30%;
+    height: 350px; 
     float: left; 
     background-color:rgba(209, 40, 40, 0.585); 
     margin: 20px 20px;
-    margin-left: 140px; 
-    /* opacity:.5;  */
-} 
+    margin-left: 150px;
+}
+
+.box a{
+    color: black;
+}
+
+
 /* The following pseudo-class applies to the box class when in a hovered state */ 
 .box:hover 
 { 
