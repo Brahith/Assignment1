@@ -1,70 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Metadata -->
     <meta charset='utf-8'>
+    <!-- Declares the character encoding as UTF-8 -->
+
     <title>Project1</title>
+    <!-- Sets the title of the webpage, displayed in the browser tab -->
+
     <meta name='viewport' content='width=device-width'>
+    <!-- Ensures the page is responsive and adjusts to different screen sizes -->
+
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <!-- Links to an external CSS file (style.css) for overall page styling -->
+
     <style>
-        #slider{
+        /* Internal CSS for the image slider */
+
+        #slider {
             overflow: hidden;
+            /* Ensures only one image is visible at a time */
         }
 
-        #slider figure{
+        #slider figure {
             position: relative;
             width: 500%;
+            /* Width set to hold all the images */
             margin: 0;
             left: 0;
+            /* Starting position for the figure element */
             animation: 20s slider infinite;
+            /* Animates the slider indefinitely for 20 seconds */
         }
 
-        #slider figure img{
+        #slider figure img {
             float: left;
             width: 20%;
+            /* Each image takes up 20% of the figure's width */
         }
 
         @keyframes slider {
+            /* Animation keyframes for sliding images */
+
             0% {
                 left: 0;
+                /* Image starts at position 0% */
             }
-            20%{
+            20% {
                 left: 0;
+                /* Image stays at 0% for the first 20% of the animation */
             }
-            25%{
+            25% {
                 left: -100%;
+                /* Slides to the second image */
             }
-            45%{
+            45% {
                 left: -100%;
+                /* Holds the second image in place for 20% of the animation */
             }
-            50%{
+            50% {
                 left: -200%;
+                /* Slides to the third image */
             }
-            70%{
+            70% {
                 left: -200%;
+                /* Holds the third image */
             }
-            75%{
+            75% {
                 left: -300%;
+                /* Slides to the fourth image */
             }
-            95%{
+            95% {
                 left: -300%;
+                /* Holds the fourth image */
             }
-            100%{
+            100% {
                 left: -400%;
+                /* Slides to the fifth image and completes the cycle */
             }
-
         }
 
     </style>
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <div class="navigation">
+        <nav>
+            <!-- Displays a logo and navigation links -->
+            <img src="images/BrahithLogo.png" class="logo">
+            <!-- Logo image in the navigation bar -->
+
+            <h1>
+                <a href="Work.html">Back</a>
+                <!-- Link back to the main Projects page -->
+
+                <a href="project1.html">Project 1</a>
+                <!-- Link to Project 1 (current page) -->
+
+                <a href="project2.html">Project 2</a>
+                <!-- Link to Project 2 -->
+            </h1>
+        </nav>
+    </div>
+
+    <!-- Slider Section -->
     <div id="slider">
         <figure>
+            <!-- Slideshow container holding all images -->
             <img src="Project1/Slide1.png">
+            <!-- First slide image -->
+
             <img src="Project1/Slide8.png">
+            <!-- Second slide image -->
+
             <img src="Project1/Slide10.png">
+            <!-- Third slide image -->
+
             <img src="Project1/Slide11.png">
+            <!-- Fourth slide image -->
+
             <img src="Project1/Slide1.png">
+            <!-- Repeats the first slide to create a seamless transition -->
         </figure>
     </div>
 </body>

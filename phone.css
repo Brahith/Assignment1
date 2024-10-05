@@ -1,3 +1,51 @@
-@media only screen and (max-width : 480px){
+@charset "UTF=8";
+/* Media Query for smaller devices (For Phone) */
+
+@media only screen and (min-width : 150px) and (max-width : 800px){
+
+    /* Home Page Adjustment */
+    .navigation{
+        flex-direction: column; /* Stack items vertically */
+        margin-top: -100px;
+    }
+
+    .logo{
+        width: 10%;
+        height: auto;
+    }
+
+
+    /* About Me Adjustment */
+
+
+
+    /* Work Page Adjustment */
     
+
+    /* Contact Page Adjustment */
+    .row {
+        flex-direction: column; /* Stack items vertically */
+        margin-top: -100px;
+    }
+    
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Make both sections take full width */
+        margin: 20px auto; /* Center sections with margin */
+    }
+
+    #navabout{
+        margin-bottom: 30px; /* Ensure space between navigation and content on smaller screens */
+    }
+
+    footer{
+        font-size: 10px;
+        background-color: white;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+    }
+
 }

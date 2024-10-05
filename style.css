@@ -1,521 +1,420 @@
-@charset "UTF-8"; /* CSS Document */
+@charset "UTF-8"; /* Specifies the character encoding for this CSS file */
 
 /*-----------HOME PAGE-------------*/
-#headerMain{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+#headerMain{ /* Styles for the main header section */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    background-size: cover; /* Background image covers the entire area */
+    background-position: center; /* Centers the background image */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Arranges child elements in a column */
+    justify-content: flex-start; /* Aligns items to the start */
 }
 
 /* The body tag style applies to all elements on the page */
-body{
-    background-image: linear-gradient(45deg, rgba(145, 124, 124, 0.493), black);
-    background-size: auto;
-    color: white;
+body{ /* Styling the body of the webpage */
+    background-image: linear-gradient(45deg, rgba(145, 124, 124, 0.493), black); /* A gradient background */
+    background-size: auto; /* Background auto-sized */
+    color: white; /* Text color is white */
 }
 
-.navigation{
-   padding: 10px 10% 
+.navigation{ /* Styling the navigation section */
+   padding: 10px 10%; /* Adds padding with 10% horizontal spacing */
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; 
+nav{ /* Styling the nav bar */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Spaces items evenly */
+    flex-wrap: wrap; /* Wraps items to the next line if necessary */
 }
 
-.logo{
-    width: 240px;
-    border-radius: 30px;
+.logo{ /* Styling for the logo */
+    width: 240px; /* Logo width */
+    border-radius: 30px; /* Rounded corners */
 }
 
-.face{
-    width: 350px;
-    height: auto;
-    margin-left: 550px;
-    margin-top: -100px;
-    border-radius: 20px;
-    animation: shape-converter 5s 1;
+.face{ /* Styling for the "face" element */
+    width: 350px; /* Sets width */
+    height: auto; /* Keeps aspect ratio */
+    margin-left: 550px; /* Moves the element to the right */
+    margin-top: -100px; /* Moves the element upwards */
+    border-radius: 20px; /* Rounded corners */
+    animation: shape-converter 5s 1; /* Applies an animation that runs once over 5 seconds */
 }
 
-@keyframes shape-converter {
-    0% {background-color: rgba(145, 124, 124, 0.493);}
+@keyframes shape-converter { /* Keyframes for the face animation */
+    0% {background-color: rgba(145, 124, 124, 0.493);} /* Starts with this background color */
     50% {
-        background-color: rgba(209, 40, 40, 0.585); 
-        transform: translate(150px) rotate(360deg); 
+        background-color: rgba(209, 40, 40, 0.585); /* Changes background color midway */
+        transform: translate(150px) rotate(360deg); /* Moves and rotates the element */
     }
     /*The transform code above allows the shape to animate in the direction you want it to move*/
-    100% {background-color: rgba(57, 48, 42, 0.308);}
+    100% {background-color: rgba(57, 48, 42, 0.308);} /* Ends with this background color */
 }
 
-nav h1{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+nav h1{ /* Styling for the h1 inside nav */
+    display: inline-block; /* Makes the h1 inline */
+    list-style: none; /* Removes bullet points */
+    margin: 10px 20px; /* Adds margin around */
 }
     
-nav h1 a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
+nav h1 a{ /* Styling the links inside the h1 */
+    color: white; /* Text color is white */
+    text-decoration: none; /* Removes underline */
+    font-size: 18px; /* Sets font size */
+    position: relative; /* Makes it possible to position pseudo-elements */
 }
     
-nav h1 a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: whitesmoke;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+nav h1 a::after{ /* Pseudo-element added after the link */
+    content: ''; /* Empty content */
+    width: 0; /* Initial width is zero */
+    height: 3px; /* Line height */
+    background: whitesmoke; /* Background color for the line */
+    position: absolute; /* Positions the element relative to the link */
+    left: 0; /* Positions it to the left */
+    bottom: -6px; /* Places it below the link */
+    transition: 0.5s; /* Smooth transition when hovering */
 }
 
-nav h1 a:hover::after{
-    width: 100%;
+nav h1 a:hover::after{ /* On hover, the line expands */
+    width: 100%; /* Line expands to full width of the link */
 }
 
-.header-text{
-    margin: 0;
-    margin-top: 10%;
-    font-size: 30px;
-    text-align: center;
+.header-text{ /* Styles the header text */
+    margin: 0; /* Removes margin */
+    margin-top: 10%; /* Adds top margin */
+    font-size: 30px; /* Sets font size */
+    text-align: center; /* Centers the text */
 }
 
-.header-text h2{
-    font-size: 60px;
-    margin-top: 20px;
+.header-text h2{ /* Styles h2 inside header text */
+    font-size: 60px; /* Sets font size */
+    margin-top: 20px; /* Adds top margin */
 }
 
-.header-text h2 span{
-    color: rgb(63, 14, 14);
+.header-text h2 span{ /* Styling for the span inside h2 */
+    color: rgb(63, 14, 14); /* Changes text color */
 }
 
-footer{
-    background-color: white;
-    width: 50%;
-    height: auto;
-    padding: 0px;
-    margin-left: 400px;
-    margin-top: -65px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer{ /* Styles the footer */
+    background-color: white; /* Footer background color */
+    width: 50%; /* Sets width */
+    height: auto; /* Automatic height */
+    padding: 0px; /* No padding */
+    margin-left: 400px; /* Moves footer to the right */
+    margin-top: -65px; /* Moves footer upwards */
+    border-radius: 20px; /* Rounded corners */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
 }
 
-.footerHome{
-    color: black;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 5px;
+.footerHome{ /* Footer text styling */
+    color: black; /* Text color */
+    font-size: 18px; /* Font size */
+    text-align: center; /* Centers the text */
+    margin-bottom: 5px; /* Adds bottom margin */
 }
 
-.footerHome i{
-    font-size: 20px; 
-    color: black;
-    padding-top: 25px;
+.footerHome i{ /* Styles icons inside footer */
+    font-size: 20px; /* Icon size */
+    color: black; /* Icon color */
+    padding-top: 25px; /* Adds padding above */
 }
 
-.bitmoji{
-    width: 8%;
-    height: auto;
-    float: left;
-    margin-left: 10px;
+.bitmoji{ /* Styles the bitmoji image */
+    width: 8%; /* Sets width */
+    height: auto; /* Maintains aspect ratio */
+    float: left; /* Floats it to the left */
+    margin-left: 10px; /* Adds left margin */
 }
 
 /*-------------ABOUT ME PAGE----------------*/
-#colorChange{
-    background-image: linear-gradient(rgba(145, 124, 124, 0.493), black);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+#colorChange{ /* Background styling for About Me page */
+    background-image: linear-gradient(rgba(145, 124, 124, 0.493), black); /* Gradient background */
+    background-size: cover; /* Cover the entire section */
+    background-repeat: no-repeat; /* No repeating of the background */
+    color: white; /* Text color is white */
 }
 
-#headerAbout{
-    width: 10%;
-    height: 5vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+#headerAbout{ /* Styles the About page header */
+    width: 10%; /* Sets width */
+    height: 5vh; /* Sets height relative to the viewport */
+    background-size: cover; /* Background covers entire area */
+    background-position: center; /* Centers the background */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Arranges items in a column */
+    justify-content: flex-start; /* Aligns items at the start */
 }
 
-.navigationAbout{
-    padding: 15px 10% 
+.navigationAbout{ /* Styles the navigation for About page */
+    padding: 15px 10%; /* Adds padding */
 }
 
-#navabout{
-    background-image: linear-gradient(45deg, black, rgba(145, 124, 124, 0.493));
-    border-radius: 10px;
+#navabout{ /* Styling for the About page navigation background */
+    background-image: linear-gradient(45deg, black, rgba(145, 124, 124, 0.493)); /* Gradient background */
+    border-radius: 10px; /* Rounded corners */
 }
 
-nav h3{
-    font-size: 25px;
-    width: 30px;
-    margin: 20px 20px;
+nav h3{ /* Styling for h3 in nav */
+    font-size: 25px; /* Sets font size */
+    width: 30px; /* Sets width */
+    margin: 20px 20px; /* Adds margin */
 }
 
-nav h4{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+nav h4{ /* Styling for h4 in nav */
+    display: inline-block; /* Inline block layout */
+    list-style: none; /* Removes bullet points */
+    margin: 10px 20px; /* Adds margin */
 }
     
-nav h4 a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
+nav h4 a{ /* Styles for links in h4 */
+    color: white; /* Link color */
+    text-decoration: none; /* Removes underline */
+    font-size: 18px; /* Font size */
+    position: relative; /* Allows positioning of pseudo-elements */
 }
     
-nav h4 a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: whitesmoke;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+nav h4 a::after{ /* Pseudo-element for links */
+    content: ''; /* Empty content */
+    width: 0; /* Initial width is zero */
+    height: 3px; /* Line height */
+    background: whitesmoke; /* Line color */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Aligns to the left */
+    bottom: -6px; /* Positions below the link */
+    transition: 0.5s; /* Smooth transition */
 }
 
-nav h4 a:hover::after{
-    width: 100%;
+nav h4 a:hover::after{ /* On hover, the line expands */
+    width: 100%; /* Expands to full width */
 }
 
-.videosection{
-    width: 200px;
-    height: 200px;
-    margin-left: 270px;
-    margin-top: 100px;
-    margin-bottom: 40px;
+.videosection{ /* Styles for video section */
+    width: 200px; /* Sets width */
+    height: 200px; /* Sets height */
+    margin-left: 270px; /* Moves it to the right */
+    margin-top: 100px; /* Adds top margin */
+    margin-bottom: 40px; /* Adds bottom margin */
 }
 
-.title{
-    width: 140px;
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    font-size: 30px;
+.title{ /* Styling for title */
+    width: 140px; /* Sets width */
+    display: inline-block; /* Inline block layout */
+    position: relative; /* Allows positioning */
+    text-decoration: none; /* No underline */
+    font-size: 30px; /* Font size */
 }
 
 /* The left-column */
-.about{
-    width: 30%;
-    height: auto;
-    padding: 30px 100px;
-    border-radius: 30px;
+.about{ /* Styles for the left column in About Me */
+    width: 30%; /* Sets width */
+    height: auto; /* Automatic height */
+    padding: 30px 100px; /* Adds padding */
+    border-radius: 30px; /* Rounded corners */
 }
 
 /* The right-column ID style is floated right */
-#right-column
-{
-    float: right;
-    width: 850px;
-    height: -200px;
-    margin-top: -320px;
-    margin-right: 50px;
-    border-radius: 20px;
-    background-color:LightGray;
+#right-column{ /* Styles for the right column */
+    float: right; /* Floats the element to the right */
+    width: 850px; /* Sets width */
+    height: -200px; /* Negative height (unusual, possibly a typo) */
+    margin-top: -320px; /* Moves upwards */
+    margin-right: 50px; /* Adds right margin */
+    border-radius: 20px; /* Rounded corners */
+    background-color: LightGray; /* Background color */
 }
 
-.animation{
-    text-decoration: none;
-    margin-right: 15px;
-    display: inline-block;
-    font-size: 20px;
-    color: white;
+.animation{ /* Styling for animation elements */
+    text-decoration: none; /* Removes underline */
+    margin-right: 15px; /* Adds right margin */
+    display: inline-block; /* Inline block layout */
+    font-size: 20px; /* Font size */
+    color: white; /* Text color */
 }
 
 /* Styling and centering the text that will be placed to the right of the picture */
-.headerName{
-    color: black;
+.headerName{ /* Styles for the header name section */
+    color: black; /* Text color */
     /* Flexbox: Center text horizontally and vertically */
-    display: contents;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
-    text-align: center;
+    display: contents; /* Contents display */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    text-align: center; /* Centers text */
 }
 
-.footerAbout{
-    color: black;
-    text-align: center;
-    margin-bottom: 25px; 
-    margin-left: 450px;
-    flex-basis: 40%;
-    font-size: 18px;
+.footerAbout{ /* Footer styling for About Me page */
+    color: black; /* Text color */
+    text-align: center; /* Centers text */
+    margin-bottom: 25px; /* Bottom margin */
+    margin-left: 450px; /* Left margin */
+    flex-basis: 40%; /* Flexbox basis */
+    font-size: 18px; /* Font size */
 }
 
-.footerAbout i{
-    font-size: 20px; 
-    color: black;
-    margin-top: 20px;
-    font-size: 25px;
+.footerAbout i{ /* Styles for icons in the footer */
+    font-size: 20px; /* Icon size */
+    color: black; /* Icon color */
+    margin-top: 20px; /* Top margin */
+    font-size: 25px; /* Font size */
 }
 
 /*-----------PROJECTS PAGE-------------*/
 
-
-
-#right-work {  
-    width: 70%;
-    height: 600px;
-    margin: 20px 225px; 
-    background-color:rgba(57, 48, 42, 0.308); 
+#right-work{  /* Styles for the right section on the projects page */
+    width: 70%; /* Sets width */
+    height: 600px; /* Sets height */
+    margin: 20px 225px; /* Adds margins */
+    background-color: rgba(57, 48, 42, 0.308); /* Background color with some transparency */
 }
 
-#right-work h2{
-    padding-top: 20px;
-    text-align: center;
+#right-work h2{ /* Styles for the h2 element inside right-work */
+    padding-top: 20px; /* Adds padding to the top */
+    text-align: center; /* Centers the text */
 }
 
-#right-work p{
-    text-align: center;
-    margin-left: 30px 200px;
+#right-work p{ /* Styles for paragraph elements in right-work */
+    text-align: center; /* Centers the text */
+    margin-left: 30px 200px; /* Left margin for spacing */
 }
 
-.projectPoster{
-    width: 80%;
-    height: auto;
-    float: left;
-    margin: 20px 20px;
-    margin-left: 40px;
+.projectPoster{ /* Styles for the project poster images */
+    width: 80%; /* Sets width */
+    height: auto; /* Maintains aspect ratio */
+    float: left; /* Floats the image to the left */
+    margin: 20px 20px; /* Adds margins */
+    margin-left: 40px; /* Additional left margin */
 }
 
-.box 
-{ 
-    width: 30%;
-    height: 350px; 
-    float: left; 
-    background-color:rgba(209, 40, 40, 0.585); 
-    margin: 20px 20px;
-    margin-left: 150px;
+.box{ /* Styles for the project box elements */
+    width: 30%; /* Sets width */
+    height: 350px; /* Sets height */
+    float: left; /* Floats the boxes to the left */
+    background-color: rgba(209, 40, 40, 0.585); /* Background color with transparency */
+    margin: 20px 20px; /* Adds margins */
+    margin-left: 150px; /* Additional left margin */
 }
 
-.box a{
-    color: black;
+.box a{ /* Styles for links inside the project boxes */
+    color: black; /* Link text color */
 }
 
-
-/* The following pseudo-class applies to the box class when in a hovered state */ 
-.box:hover 
-{ 
-    background-color:rgba(209, 40, 40, 0.585); 
-    opacity:1;
-    transform: translateY(-5px); 
+/* The following pseudo-class applies to the box class when in a hovered state */
+.box:hover{ /* Hover effect for the boxes */
+    background-color: rgba(209, 40, 40, 0.585); /* Keeps the background color the same */
+    opacity: 1; /* Full opacity */
+    transform: translateY(-5px); /* Moves the box slightly upwards */
 }
 
-.footerWork{
-    color: black;
-    text-align: center;
-    margin: 0px 130px;
-    margin-left: 425px;
-    font-size: 18px;
+.footerWork{ /* Styles for the footer on the projects page */
+    color: black; /* Text color */
+    text-align: center; /* Centers the text */
+    margin: 0px 130px; /* Horizontal margins */
+    margin-left: 425px; /* Additional left margin */
+    font-size: 18px; /* Font size */
 }
 
-.footerWork i{ 
-    color: black;
-    font-size: 20px;
-    padding: 25px;
+.footerWork i{  /* Styles for icons inside the projects footer */
+    color: black; /* Icon color */
+    font-size: 20px; /* Icon size */
+    padding: 25px; /* Padding around the icon */
 }
 
 /*-----------CONTACT ME PAGE-------------*/
-#contact{
-    padding: 90px 40px;
+#contact{ /* Styles for the contact section */
+    padding: 90px 40px; /* Adds padding to the contact section */
 }
 
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
+.row{ /* Flexbox layout for rows */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Spaces items evenly */
+    flex-wrap: wrap; /* Wraps items onto the next line if necessary */
+    flex-direction: row; /* Aligns items in a row */
 }
 
 /*Left Side of the Contact Page*/
-.contact-left{
-    margin: 0px 130px;
-    margin-top: -400px;
-    flex-basis: 40%;
+.contact-left{ /* Styles for the left side of the contact page */
+    margin: 0px 130px; /* Horizontal margins */
+    margin-top: -400px; /* Moves the section upwards */
+    flex-basis: 40%; /* Flexbox basis */
 }
 
-.contact-left p i{
-    color: black;
-    margin-right: 15px;
-    font-size: 25px;
+.contact-left p i{ /* Styles for icons inside paragraphs on the left side */
+    color: black; /* Icon color */
+    margin-right: 15px; /* Right margin for spacing */
+    font-size: 25px; /* Icon size */
 }
 
-.social-icons a{
-    text-decoration: none;
-    margin-right: 15px;
-    display: inline-block;
-    font-size: 20px;
-    color: white;
+.social-icons a{ /* Styles for the social media links */
+    text-decoration: none; /* Removes underline from the links */
+    margin-right: 15px; /* Adds right margin */
+    display: inline-block; /* Displays links as inline-block */
+    font-size: 20px; /* Font size */
+    color: white; /* Link text color */
 }
 
-.social-icons a:hover{
-    color: black;
-    transform: translateY(-5px);
+.social-icons a:hover{ /* Hover effect for the social media links */
+    color: black; /* Changes link color on hover */
+    transform: translateY(-5px); /* Moves the link slightly upwards */
 }
 
 /*Right Side of the Contact Page*/
-.contact-right{
-    margin-top: -40px;
-    flex-basis: 40%;
+.contact-right{ /* Styles for the right side of the contact page */
+    margin-top: -40px; /* Moves the section upwards */
+    flex-basis: 40%; /* Flexbox basis */
 }
 
-/* .btn.btn2{
-    display: inline-block;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    margin-left: 30px;
+.contact-right form{ /* Styles for forms on the right side */
+    width: 100%; /* Full width */
 }
 
-.btn.btn2:hover{
-    color: white;
-    transform: translateY(-5px);
-} */
-
-.contact-right form{
-    width: 100%;
+.contact-right form input[type="submit"]{ /* Styles for submit buttons */
+    display: inline-block; /* Displays as inline-block */
+    background-color: black; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 20px; /* Font size */
+    margin-left: 30px; /* Left margin for spacing */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
- .contact-right form input[type="submit"]{
-    display: inline-block;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    margin-left: 30px;
-    border-radius: 6px;
-    cursor: pointer; /* Adds pointer cursor on hover */
+.contact-right form input[type="submit"]:hover{ /* Hover effect for submit button */
+    color: white; /* Keeps text color the same */
+    transform: translateY(-5px); /* Moves the button slightly upwards */
 }
 
-.contact-right form input[type="submit"]:hover{
-    color: white;
-    transform: translateY(-5px);
+form input, form label{ /* Styles for form inputs and labels */
+    font-size: 17px; /* Font size */
 }
 
-form input, form label{
-    font-size: 17px;
+form input, form textarea{ /* Styles for inputs and text areas */
+    width: 90%; /* Sets width */
+    border: 0; /* Removes border */
+    outline: none; /* Removes outline on focus */
+    background: grey; /* Background color */
+    padding: 15px; /* Adds padding */
+    margin: 15px; /* Adds margin */
+    color: white; /* Text color */
+    font-size: 15px; /* Font size */
+    border-radius: 6px; /* Rounded corners */
 }
 
-form input, form textarea{
-    width: 90%;
-    border: 0;
-    outline: none;
-    background: grey;
-    padding: 15px;
-    margin: 15px;
-    color: white;
-    font-size: 15px;
-    border-radius: 6px;
+.footerContact{ /* Styles for the footer on the contact page */
+    color: black; /* Text color */
+    text-align: center; /* Centers the text */
+    margin: 0px 130px; /* Horizontal margins */
+    margin-left: 450px; /* Additional left margin */
+    flex-basis: 40%; /* Flexbox basis */
+    font-size: 18px; /* Font size */
 }
 
-.footerContact{
-    color: black;
-    text-align: center;
-    margin: 0px 130px;
-    margin-left: 450px;
-    flex-basis: 40%;
-    font-size: 18px;
+.footerContact i{ /* Styles for icons in the contact footer */
+    font-size: 20px; /* Icon size */
+    color: black; /* Icon color */
+    margin-right: 5px; /* Adds right margin */
+    margin-top: 15px; /* Adds top margin */
+    font-size: 25px; /* Icon size */
 }
 
-.footerContact i{
-    font-size: 20px; 
-    color: black;
-    margin-right: 5px;
-    margin-top: 15px;
-    font-size: 25px;
-}
-
-
-@media (max-width: 800px) and (min-width: 10px){
-    
-    /* Home Page Ajustments */
-    @media (min-width: 801px) and (max-width: 1500px){
-        .navigation{
-            flex-direction: column; /* Stack items vertically */
-            margin-top: -100px;
-        }
-
-        .logo{
-            width: 100px;
-            height: auto;
-        }
-
-    }
-
-    @media (min-width: 801px) and (max-width: 1500px) {
-        .navigation{
-            display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;        
-        flex-direction: row; /* Stack items horizontally */
-        margin-top: -100px;
-        }
-
-        .logo{
-            width: 150px;
-            height: auto;
-        }
-    }
-
-
-    /* About Me Page Ajustments */
-
-
-
-    /* Work Page Ajustments */
-
-
-
-    /* Contact Me Page Adjustments */
-    .row {
-        flex-direction: column; /* Stack items vertically */
-        margin-top: -100px;
-    }
-    
-    .contact-left, .contact-right {
-        flex-basis: 100%; /* Make both sections take full width */
-        margin: 20px auto; /* Center sections with margin */
-    }
-
-    #navabout{
-        margin-bottom: 30px; /* Ensure space between navigation and content on smaller screens */
-    }
-
-    footer{
-        font-size: 10px;
-        background-color: white;
-        width: 100%;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap; 
-    }
-}
-
-@media (min-width: 801px) and (max-width: 1500px) {
-    .row {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;        
-        flex-direction: row; /* Stack items horizontally */
-        margin-top: -100px;
-    }
-
-    .contact-left, .contact-right {
-        flex-basis: 100%; /* Make both sections take full width */
-        margin: 20px auto; /* Center sections with margin */
-    }
-}

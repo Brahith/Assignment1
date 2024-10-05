@@ -1,0 +1,57 @@
+@charset "UTF=8";
+/* Media Query for smaller devices (For Table) */
+
+@media (min-width: 801px) and (max-width: 1499px) {
+
+/* Home Page Adjustments */
+.navigation{
+    display: flex;
+justify-content: space-between;
+flex-wrap: wrap;        
+flex-direction: row; /* Stack items horizontally */
+margin-top: -100px;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+/* About Me Adjustments */
+#header About{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;        
+    flex-direction: column; /* Stack items horizontally */  
+    flex-basis: 100%; /* Make both sections take full width */
+    margin: 20px auto; /* Center sections with margin */
+}
+
+
+.left-column , .right-column{
+    flex-basis: 100%; /* Make both sections take full width */
+    margin: 20px auto; /* Center sections with margin */
+    font-size: 30px;
+}
+
+
+
+
+/* Work Page Adjustments */
+
+
+
+/* Contact Me Adjustments */
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;        
+        flex-direction: row; /* Stack items horizontally */
+        margin-top: -100px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Make both sections take full width */
+        margin: 20px auto; /* Center sections with margin */
+    }
+}

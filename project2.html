@@ -1,72 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Metadata -->
     <meta charset='utf-8'>
     <title>Project1</title>
+    <!-- Title displayed in the browser tab -->
+
     <meta name='viewport' content='width=device-width'>
+    <!-- Viewport meta tag to ensure the page is responsive -->
+
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <!-- Link to external stylesheet for the overall style -->
+
     <style>
-        #slider{
+        /* Slider container */
+        #slider {
             overflow: hidden;
+            /* Ensures only one image is visible at a time */
         }
 
-        #slider figure{
+        /* Slider figure that contains all images */
+        #slider figure {
             position: relative;
             width: 500%;
+            /* Width is set to 500% to accommodate all 5 images (each 20% of the total width) */
             margin: 0;
             left: 0;
+            /* Initially positioned at 0 */
             animation: 20s slider infinite;
+            /* Slides through the images over 20 seconds in an infinite loop */
         }
 
-        #slider figure img{
+        /* Style for individual images inside the slider */
+        #slider figure img {
             float: left;
             width: 20%;
+            /* Each image takes up 20% of the figure's width */
         }
 
+        /* Keyframes for slider animation */
         @keyframes slider {
             0% {
                 left: 0;
+                /* Start with the first image at position 0 */
             }
-            20%{
+            20% {
                 left: 0;
+                /* First image stays in view for the first 20% of the animation */
             }
-            25%{
+            25% {
                 left: -100%;
+                /* Slide to the second image */
             }
-            45%{
+            45% {
                 left: -100%;
+                /* Hold the second image for 20% of the animation */
             }
-            50%{
+            50% {
                 left: -200%;
+                /* Slide to the third image */
             }
-            70%{
+            70% {
                 left: -200%;
+                /* Hold the third image */
             }
-            75%{
+            75% {
                 left: -300%;
+                /* Slide to the fourth image */
             }
-            95%{
+            95% {
                 left: -300%;
+                /* Hold the fourth image */
             }
-            100%{
+            100% {
                 left: -400%;
+                /* Slide to the fifth image, completing the loop */
             }
-
         }
-
     </style>
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <div class="navigation">
+        <nav>
+            <!-- Logo and navigation links -->
+            <img src="images/BrahithLogo.png" class="logo">
+            <h1>
+                <a href="Work.html">Back</a>
+                <!-- Link to return to the main projects page -->
+
+                <a href="project1.html">Project 1</a>
+                <!-- Link to Project 1 -->
+
+                <a href="project2.html">Project 2</a>
+                <!-- Link to Project 2 (current page) -->
+            </h1>
+        </nav>
+    </div>
+
+    <!-- Image Slider Section -->
     <div id="slider">
         <figure>
-            <img src="Project2/ProjectSlide1.png">
-            <img src="Project2/ProjectSlide4.png">
-            <img src="Project2/ProjectSlide6.png">
-            <img src="Project2/ProjectSlide8.png">
-            <img src="Project2/ProjectSlide1.png">
+            <!-- Slideshow images -->
+            <img src="Project2/ProjectSlide1.png" alt="Project Slide 1">
+            <img src="Project2/ProjectSlide4.png" alt="Project Slide 4">
+            <img src="Project2/ProjectSlide6.png" alt="Project Slide 6">
+            <img src="Project2/ProjectSlide8.png" alt="Project Slide 8">
+            <img src="Project2/ProjectSlide1.png" alt="Project Slide 1">
+            <!-- Repeats the first image for a seamless transition -->
         </figure>
     </div>
 </body>
-
 </html>
